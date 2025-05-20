@@ -96,6 +96,7 @@ sequenceDiagram
 - [배포 히스토리(프론트)](https://github.com/youngwan2/food-picker/issues/27)
 - [배포 히스토리(백엔드)](https://github.com/youngwan2/food-picker/issues/30)
 - [트러블슈팅 <링크>](https://youngwan2.notion.site/1f968acd779b8050bf02e67cc53b1bf4)
+- [개발 히스토리 <링크>](https://github.com/youngwan2/food-picker/issues/15)
 <br><br>
 ## 🗂️ 프로젝트 구조
 ```
