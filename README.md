@@ -1,25 +1,18 @@
 ※ 백엔드 주소: https://github.com/youngwan2/foodpicker-server
 
-## 📓 프로젝트명
-- 식품 정보공유 웹 사이트: <mark><b>Food Picker</b></mark>
-![main png](https://github.com/youngwan2/food-picker/assets/107159871/f94e8ddb-a0d1-4f07-b2e1-900253f5e201)
-
-
-## 🎫 프로젝트 목적
+# 📓 식품 정보 공유 웹 사이트, 푸드피커
+## 🎫 프로젝트 개요
 - 우리 지역의 음식, 다양한 음식의 영양정보, 간단한 레시피 등 음식과 관련한 다양한 정보를 쉽게 찾아서 활용할 수 있으면 좋지 않을까 라는 생각에 개발하게 되었습니다.
-
-
+![main png](https://github.com/youngwan2/food-picker/assets/107159871/f94e8ddb-a0d1-4f07-b2e1-900253f5e201)
+<br><br>
 ## 📅 개발기간
-- (이전 개발) 2023년 7월 16일 ~ 2023년 8월 13일
-- (전체 재개발) 2024년 5월 24일 ~ 2024년 6월 12일
-- (유지보수) 2024년 6월 13일 ~
-
+- 2024년 5월 24일 ~ 2024년 6월 12일
+- **비고**: 과거 개발된 프로젝트를 전면적으로 재개발한 프로젝트이며, 초기 개발시에는 무분별한 !important의 사용으로 CSS의 계층적인 우선순위가 관리가 불가능해질 정도로 복잡해 졌고, 무엇보다 폰트, 레이아웃 설계, 중복된 로직과 정리되지 못한 폴더구조 등 전반적으로 개선할 포인트가 많아서 3주 정도 기간을 정해서 기본 틀만 남겨두고, 전면 재개발하였습니다.
+<br><br>
 ## 🔥 배포
-- 루트 도메인: https://foodpick.co.kr/
-- 서브 도메인: https://www.foodpick.co.kr/
-- 배포 히스토리(프론트): https://github.com/youngwan2/food-picker/issues/27
-- 배포 히스토리(백엔드): https://github.com/youngwan2/food-picker/issues/30
-- 배포 아키텍처
+- 데모(비용 문제 배포중단): https://foodpick.co.kr/
+<br><br>
+## 📟 배포 시퀸스다이어그램
 ``` mermaid
 sequenceDiagram
     participant Dev as Developer
@@ -44,7 +37,8 @@ sequenceDiagram
     User->>CF: Request website
     CF->>User: Serve website content
 ```
-## 🧰 프레임워크 / 라이브러리 / 그 외 도구
+<br><br>
+## 🧰 기술스택
 ### 프론트엔드/백엔드
 
 |      사용 스텍       | 비고  |
@@ -60,8 +54,8 @@ sequenceDiagram
 |      사용 스택       | 비고  |
 | :------------------ | :---------------------- |
 |    SQLite(^5.11.0)    | 복잡한 관계없이 대량의 데이터를 조회하고 빠른 쿼리를 생각한다면 NoSQL이 최적이겠으나, 개인적으로 관계형 데이터베이스의 학습 목적 및 별도의 서버없이 데이터베이스 구축과 적용이 가능하다는 이점, 향후 타 RDBS 이전 시 용이성이 돋보여서 선택 |
-
-## ⚙ 구현된 기능
+<br><br>
+## ⚙ 기능
 - ### 로드맵
     -  react-kakao-maps-sdk 를 활용하여 연관 식당의 로드뷰를 확인할 수 있는 기능 입니다.  useState로 설정한 true/false 상태에 따라 일반지도와 로드뷰를 바꿔가며 볼 수 있도록 구현했고, 전체화면과 창화면 모드를 지원하여 모바일 환경과 데스크톱 환경에서도 일관된 사용자 경험을 제공할 수 있도록 구현되었습니다.
     ![image](https://github.com/user-attachments/assets/11e9d23e-21a5-4c79-ad81-5fc16c5d07fb)
@@ -96,12 +90,13 @@ sequenceDiagram
 - ### 현재 항목 표시
     -  현재 사용자가 스크롤된 페이지의 수나 아이템의 갯수를 시각적으로 확인할 수 있는 기능 입니다.
     -  무한 스크롤 기반으로 목록을 조회할 때 사용자가 현재 어느 지점까지 왔는지 시각적으로 확인할 수 있다면 편할 것 같아서 추가하였습니다.
-      
     ![image](https://github.com/user-attachments/assets/30fb7ec1-e29a-4479-a73b-0d5924692573)
-
-
-
-
+<br><br>
+## 📒 문서
+- [배포 히스토리(프론트)](https://github.com/youngwan2/food-picker/issues/27)
+- [배포 히스토리(백엔드)](https://github.com/youngwan2/food-picker/issues/30)
+- [트러블슈팅 <링크>](https://youngwan2.notion.site/1f968acd779b8050bf02e67cc53b1bf4)
+<br><br>
 ## 🗂️ 프로젝트 구조
 ```
 📦src
