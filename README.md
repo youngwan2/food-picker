@@ -9,6 +9,12 @@
 - 2024년 5월 24일 ~ 2024년 6월 12일
 - **비고**: 과거 개발된 프로젝트를 전면적으로 재개발한 프로젝트이며, 초기 개발시에는 무분별한 !important의 사용으로 CSS의 계층적인 우선순위가 관리가 불가능해질 정도로 복잡해 졌고, 무엇보다 폰트, 레이아웃 설계, 중복된 로직과 정리되지 못한 폴더구조 등 전반적으로 개선할 포인트가 많아서 3주 정도 기간을 정해서 기본 틀만 남겨두고, 전면 재개발하였습니다.
 <br><br>
+## 📒 문서
+- <a href="https://youngwan2.notion.site/1f968acd779b8050bf02e67cc53b1bf4" target="_blank" rel="noopener noreferrer">트러블슈팅</a>
+- <a href="https://github.com/youngwan2/food-picker/issues/27" target="_blank" rel="noopener noreferrer">배포 히스토리(프론트)</a>
+- <a href="https://github.com/youngwan2/food-picker/issues/30" target="_blank" rel="noopener noreferrer">배포 히스토리(백엔드)</a>
+- <a href="https://github.com/youngwan2/food-picker/issues/15" target="_blank" rel="noopener noreferrer">개발 히스토리</a>
+<br><br>
 ## 🔥 배포
 - 데모(비용 문제 배포중단): https://foodpick.co.kr/
 <br><br>
@@ -91,12 +97,6 @@ sequenceDiagram
     -  현재 사용자가 스크롤된 페이지의 수나 아이템의 갯수를 시각적으로 확인할 수 있는 기능 입니다.
     -  무한 스크롤 기반으로 목록을 조회할 때 사용자가 현재 어느 지점까지 왔는지 시각적으로 확인할 수 있다면 편할 것 같아서 추가하였습니다.
     ![image](https://github.com/user-attachments/assets/30fb7ec1-e29a-4479-a73b-0d5924692573)
-<br><br>
-## 📒 문서
-- [배포 히스토리(프론트)](https://github.com/youngwan2/food-picker/issues/27)
-- [배포 히스토리(백엔드)](https://github.com/youngwan2/food-picker/issues/30)
-- [트러블슈팅 <링크>](https://youngwan2.notion.site/1f968acd779b8050bf02e67cc53b1bf4)
-- [개발 히스토리 <링크>](https://github.com/youngwan2/food-picker/issues/15)
 <br><br>
 ## 🗂️ 프로젝트 구조
 ```
