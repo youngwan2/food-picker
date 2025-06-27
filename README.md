@@ -132,6 +132,7 @@ sequenceDiagram
 <br><br>
 
 ## 🗂️ 프로젝트 구조
+### 프론트엔드
 ```
 📦src
  ┣ 📂api ---------->  HTTP 요청
@@ -152,4 +153,39 @@ sequenceDiagram
  ┣ 📂router ------->  페이지 라우터 설정
  ┣ 📂types  ------->  타입 관리
  ┗ 📂utils  ------->  유틸 함수 관리
+```
+
+### 백엔드
+```
+📦src
+ ┣ 📂bin
+ ┃ ┗ 📜www.ts ---------------------- 서버 실행 진입점 (Express 앱을 실행시킴)
+ ┣ 📂controllers ------------------ 요청에 대한 비즈니스 로직 처리
+ ┃ ┣ 📜ai.controller.ts ---------------------- AI 관련 요청 처리
+ ┃ ┣ 📜localfood.controller.ts --------------- 지역 음식 관련 로직 처리
+ ┃ ┣ 📜localmarket.controller.ts ------------- 지역 마켓 관련 로직 처리
+ ┃ ┣ 📜naver.controller.ts ------------------- 네이버 API 연동 관련 처리
+ ┃ ┣ 📜nutrition.controller.ts --------------- 영양 정보 관련 로직 처리
+ ┃ ┗ 📜traditionalfood.controller.ts --------- 전통 음식 관련 로직 처리
+ ┣ 📂db --------------------------- DB 연결 관리
+ ┃ ┗ 📜dbConnection.ts ----------------------- DB 커넥션 및 설정 정의
+ ┣ 📂models ----------------------- 데이터 구조 정의 (Schema/Interface)
+ ┃ ┣ 📜ai.model.ts --------------------------- AI 관련 데이터 모델
+ ┃ ┣ 📜localfood.model.ts -------------------- 지역 음식 데이터 모델
+ ┃ ┣ 📜localmarket.model.ts ------------------ 지역 마켓 데이터 모델
+ ┃ ┣ 📜naver.model.ts ------------------------ 네이버 API 관련 데이터 구조
+ ┃ ┣ 📜nutrition.model.ts -------------------- 영양 정보 데이터 모델
+ ┃ ┗ 📜traditionalfood.model.ts -------------- 전통 음식 데이터 모델
+ ┣ 📂routes ------------------------ 요청 라우팅 정의
+ ┃ ┣ 📜ai.router.ts -------------------------- AI 관련 라우터
+ ┃ ┣ 📜localfood.router.ts ------------------- 지역 음식 라우터
+ ┃ ┣ 📜localmarket.router.ts ----------------- 지역 마켓 라우터
+ ┃ ┣ 📜naver.router.ts ----------------------- 네이버 관련 라우터
+ ┃ ┣ 📜nutrtion.router.ts -------------------- 영양 정보 라우터 (오타: nutr**i**tion?)
+ ┃ ┗ 📜traditionalfood.router.ts ------------- 전통 음식 라우터
+ ┣ 📂utils -------------------------- 유틸리티 함수 모음
+ ┃ ┗ 📜helper.ts ----------------------------- 공통으로 사용하는 헬퍼 함수들
+ ┣ 📜Inversify.config.ts ----------- DI 컨테이너 설정 (InversifyJS 설정)
+ ┗ 📜server.ts ---------------------- Express 앱 설정 (미들웨어, 라우터 등 구성)
+
 ```
