@@ -67,7 +67,7 @@ sequenceDiagram
 <br><br>
 
 
-## GIF 데모
+## 🎬 GIF 시연
 ### 향토이야기
 #### 메인
 ![local](https://github.com/user-attachments/assets/04e79e37-19d3-4a69-940f-9160cbe76459)
