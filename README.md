@@ -2,8 +2,11 @@
 
 # 📓 식품 정보 공유 웹 사이트, 푸드피커
 ## 🎫 프로젝트 개요
-- 우리 지역의 음식, 다양한 음식의 영양정보, 간단한 레시피 등 음식과 관련한 다양한 정보를 쉽게 찾아서 활용할 수 있으면 좋지 않을까 라는 생각에 개발하게 되었습니다.
-![main png](https://github.com/youngwan2/food-picker/assets/107159871/f94e8ddb-a0d1-4f07-b2e1-900253f5e201)
+- 우리 지역의 음식, 다양한 음식의 영양정보, 간단한 레시피 등 음식정보 공유 웹
+  
+ ![home](https://github.com/user-attachments/assets/b4a5b4df-996d-4f90-99e3-610b9e6f88c9)
+
+
 <br><br>
 ## 📅 개발기간
 - 2024년 5월 24일 ~ 2024년 6월 12일
@@ -62,6 +65,34 @@ sequenceDiagram
 |    SQLite(^5.11.0)    | 복잡한 관계없이 대량의 데이터를 조회하고 빠른 쿼리를 생각한다면 NoSQL이 최적이겠으나, 개인적으로 관계형 데이터베이스의 학습 목적 및 별도의 서버없이 데이터베이스 구축과 적용이 가능하다는 이점, 향후 타 RDBS 이전 시 용이성이 돋보여서 선택 |
 
 <br><br>
+
+
+## GIF 데모
+### 향토이야기
+#### 메인
+![local](https://github.com/user-attachments/assets/04e79e37-19d3-4a69-940f-9160cbe76459)
+
+#### 상세
+![local-detail](https://github.com/user-attachments/assets/fb3ead2d-390b-4926-9cad-2cebf7213ac9)
+
+
+### HACCP 페이지
+![haccp](https://github.com/user-attachments/assets/97e27fcc-896e-44b5-a8fe-379016b35a10)
+
+
+### 간단 레시피
+![recipe](https://github.com/user-attachments/assets/274f95d0-8ae2-4119-b007-f1b1c0180712)
+
+### 전통 음식
+![tradition](https://github.com/user-attachments/assets/d3ce7321-4fe1-4dca-a903-f8da093356db)
+
+### 식품영양정보
+![nutribution](https://github.com/user-attachments/assets/8127356d-1a4a-4384-8cfc-42f8ba84ec2e)
+
+
+<br><br>
+
+
 ## ⚙ 기능
 - ### 로드맵
     -  react-kakao-maps-sdk 를 활용하여 연관 식당의 로드뷰를 확인할 수 있는 기능 입니다.  useState로 설정한 true/false 상태에 따라 일반지도와 로드뷰를 바꿔가며 볼 수 있도록 구현했고, 전체화면과 창화면 모드를 지원하여 모바일 환경과 데스크톱 환경에서도 일관된 사용자 경험을 제공할 수 있도록 구현되었습니다.
@@ -99,6 +130,7 @@ sequenceDiagram
     -  무한 스크롤 기반으로 목록을 조회할 때 사용자가 현재 어느 지점까지 왔는지 시각적으로 확인할 수 있다면 편할 것 같아서 추가하였습니다.
     ![image](https://github.com/user-attachments/assets/30fb7ec1-e29a-4479-a73b-0d5924692573)
 <br><br>
+
 ## 🗂️ 프로젝트 구조
 ```
 📦src
